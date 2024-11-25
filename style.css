@@ -1,0 +1,199 @@
+
+:root{
+    font-family: "Outfit", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1a1a;
+    /* background-color: #fff; */
+    overflow-y: hidden;
+}
+
+h1{
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+input{
+    font-family: "Outfit", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.wrapper{
+    /* border: 1px solid #000; */
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: #141313;
+    box-shadow: 0px 16px 32px -16px rgba(0, 0, 0, 0.7);
+}
+
+div.notification{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: #141313;
+    box-shadow: 0px 16px 32px -16px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0%;
+    transition: 0.4s ease;
+    position: relative;
+    top: 30px;
+}
+
+div.notification p{
+    margin: 0;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+div.notification i{
+    color: #fff;
+}
+
+.wrapper form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#input-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #2e2e2e;
+    border-radius: 3px;
+    background-color: #161616;
+}
+
+#input-wrapper button{
+    background-color: transparent;
+    border: none;
+    color: #4e4e4e;
+    font-family: "Outfit", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+#copy-btn{
+    position: relative;
+}
+
+#copy-btn .tooltip{
+    background-color: #1b10c0;
+    text-wrap: nowrap;
+    width: fit-content;
+    padding: 4px;
+    color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 130%;
+    opacity: 0%;
+    transition: 0.4s ease;
+}
+
+#copy-btn .tooltip::after{
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-color: #1b10c0 transparent transparent transparent;
+    border-style: solid;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#copy-btn:focus .tooltip{
+    opacity: 100%;
+}
+
+#passwordInput{
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #4e4e4e;
+}
+
+#settingsArea{
+    display: flex;
+    flex-direction: column;
+}
+
+#settingsArea h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ece9e5;
+}
+
+#passwordLengthArea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#passwordLengthArea label{
+    color: #4e4e4e;
+}
+
+#passwordLength{
+    width: 50px;
+    padding: 10px 5px;
+    background-color: #161616;
+    color: #4e4e4e;
+    border: 1px solid #2e2e2e;
+    border-radius: 3px;
+    outline: none;
+}
+
+#settingsArea h3{
+    margin: 0;
+    margin-bottom: 10px;
+    color: #4e4e4e;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4e4e4e35;
+}
+
+#settingsArea div{
+    margin-block: 5px;
+}
+
+#settingsArea div > input{
+    margin-right: 10px;
+    accent-color: #b72e13;
+}
+
+#settingsArea div > label{
+    /* color: #808080; */
+    color: #4e4e4e;
+}
+
+form > button{
+    padding: 10px;
+    font-family: "Outfit", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 10px 20px -16px #b72e13e7;
+    color: #fff;
+    background-color: #b72e13;
+    transition: 0.5s ease;
+}
+
+form > button:hover{
+    background-color: #1b10c0;
+    cursor: pointer;
+}
